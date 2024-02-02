@@ -1,0 +1,16 @@
+{
+  "Routes": [
+    {
+      "UpstreamPathTemplate": "/gateway/estoque",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/estoque",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "estoque",
+          "Port": 80
+        }
+      ]
+    }
+  ]
+}
